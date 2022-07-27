@@ -62,6 +62,13 @@ public class ArticleController {
     }
 
     public void modify(Rq rq) {
+        long id = rq.getLongPathValueByIndex(1,0);
+//        if (id==0){
+//            rq.appendBody("번호를 입력해주세요.");
+//            return;
+//        }
+        rq.view("usr/article/modify");
+
     }
 
     public void doModify(Rq rq) {
