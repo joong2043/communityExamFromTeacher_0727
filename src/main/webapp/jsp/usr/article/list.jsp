@@ -13,6 +13,7 @@ List<ArticleDto> articles = (List<ArticleDto>)request.getAttribute("articles");
     <li>
         <a href="/usr/article/detail/free/<%=article.getId()%>"><%=article.getId()%>. <%=article.getTitle()%></a>
         <a href="/usr/article/delete/free/<%=article.getId()%>">삭제</a>
+        <a href="/usr/article/modify/free/"<%=article.getId()%>">수정</a>
     </li>
     <% } %>
 </ul>

@@ -60,4 +60,10 @@ public class ArticleController {
         articleService.remove(id);
 
     }
+
+    public void modify(Rq rq) {
+    }
+
+    public void doModify(Rq rq) {
+    }
 }
