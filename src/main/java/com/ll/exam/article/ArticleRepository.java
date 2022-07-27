@@ -23,6 +23,10 @@ public class ArticleRepository {
         return id;
     }
 
+    public void remove(long id){
+        datum.remove(findById(id));
+    }
+
     public List<ArticleDto> findAll() {
         return datum;
     }

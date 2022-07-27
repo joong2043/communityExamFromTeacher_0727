@@ -50,4 +50,14 @@ public class ArticleController {
         rq.setAttr("article", articleDto);
         rq.view("usr/article/detail");
     }
+    public void deleteArticle(Rq rq){
+        long id  = rq.getLongPathValueByIndex(1,0);
+
+        if (id==0){
+            rq.appendBody("번호를 입력해주세요.");
+            return;
+        }
+        articleService.remove(id);
+
+    }
 }

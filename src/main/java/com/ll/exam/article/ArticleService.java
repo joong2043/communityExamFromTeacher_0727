@@ -22,4 +22,8 @@ public class ArticleService {
     public ArticleDto findById(long id) {
         return articleRepository.findById(id);
     }
+
+    public void remove(long id){
+        articleRepository.remove(id);
+    }
 }
